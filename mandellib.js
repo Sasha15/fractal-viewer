@@ -31,7 +31,7 @@ function makePallete () {
 		if (x < 0) x = -x;
 		return x;
 	}
-	for( var i = 0; i < = this.max_iter; i++ ) {
+	for( var i = 0; i <= this.max_iter; i++ ) {
 		pallete.push( [ wrap( 7 * i ), wrap( 5 * i ), wrap( 11 * i ) ]);
 	}
 }
@@ -59,7 +59,7 @@ function drawRow (workerResults) {
 }
 
 function setupGraphics () {
-	canvas = document.getElementById("canvas");
+	canvas = document.getElementById("fractal");
 	ctx = canvas.getContext("2d");
 
 	canvas.width = window.innerWidth;
